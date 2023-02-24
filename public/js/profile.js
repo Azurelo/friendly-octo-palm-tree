@@ -45,3 +45,4 @@ document
 document
   .querySelector('.appointment-list')
   .addEventListener('click', delButtonHandler);
+

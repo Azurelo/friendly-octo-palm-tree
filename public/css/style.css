@@ -1,7 +1,12 @@
-header, .appointment:not(:last-child) {
+header{
   border-bottom: 1px solid #ccc;
 }
-
+.footer{
+  border-top: 1px solid #ccc;
+}
+.appointment {
+  margin: .5%;
+}
 .no-button {
   background: none;
   border: none;

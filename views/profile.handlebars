@@ -1,42 +1,42 @@
-<div class="row">
-  <div class="col-auto">
+<div class="container text-center">
+  <div class="">
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-md-6">
+<div class="container text-center">
+  <div class="">
     <h3>Create a New Appointment:</h3>
-
     <form class="form new-appointment-form">
-      <div class="form-group">
-        <label for="appointment-name">Pet Name:</label>
-        <input class="form-input" type="text" id="appointment-name" name="appointment-name" />
-      </div>
-      <div class="form-group">
-        <label for="appointment-funding">Cost ($):</label>
-        <input class="form-input" type="number" id="appointment-funding" name="appointment-funding" />
-      </div>
-      <div class="form-group">
-        <label for="appointment-desc">description:</label>
-        <textarea class="form-input" id="appointment-desc" name="appointment-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
+      <fieldset>
+        <legend>Create An Appointment</legend>
+        <div class="mb-3 form-group">
+          <label for="appointment-name" class="form-label">Pet name:</label>
+          <input type="text" id="appointment-name" class="form-input" placeholder="Pet Name" name="appointment-name">
+        </div>
+        <div class="mb-3 form-group">
+          <label for="appointment-funding" class="form-label">Adoption Fee:</label>
+          <input type="text" id="appointment-funding" class="form-input" placeholder="Adoption Fee" name="appointment-funding">
+        </div>
+        <div class="mb-3 form-group">
+          <label for="appointment-desc" class="form-label">Appointment Time:</label>
+          <input type="text" id="appointment-desc" class="form-input" placeholder="Appointment Time" name="appointment-desc">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
     </form>
   </div>
 
   {{#if appointments.length}}
-  <div class="col-md-6 appointment-list">
+  <div class="container text-center appointment-list">
     <h3>Current Appointments:</h3>
 
     {{#each appointments as |appointment|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
+    <div class="container text-center">
+      <div class="md-8">
         <h4><a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h4>
       </div>
-      <div class="col-md-4">
+      <div class="md-4">
         <button class="btn btn-sm btn-danger" data-id="{{appointment.id}}">DELETE</button>
       </div>
     </div>

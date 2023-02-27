@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Create a New Appointment:</h3>
+
+    <form class="form new-appointment-form">
+      <div class="form-group">
+        <label for="appointment-name">Pet Name:</label>
+        <input class="form-input" type="text" id="appointment-name" name="appointment-name" />
+      </div>
+      <div class="form-group">
+        <label for="appointment-funding">Cost ($):</label>
+        <input class="form-input" type="file" id="appointment-funding" name="appointment-funding" />
+      </div>
+      <div class="form-group">
+        <label for="appointment-desc">description:</label>
+        <textarea class="form-input" id="appointment-desc" name="appointment-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if appointments.length}}
+  <div class="col-md-6 appointment-list">
+    <h3>Current Appointments:</h3>
+
+    {{#each appointments as |appointment|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{appointment.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/profile.js"></script>

@@ -9,23 +9,24 @@
   {{#each appointments as |appointment| }}
 
 
-
-  <div class="card card-rounded appointment " style="width: 18rem; padding: 10px">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title"> 
-        <a href="/appointment/{{appointment.id}}">{{appointment.name}}</a>
-      </h5>
-      <p class="card-text">{{appointment.description}}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{format_amount appointment.needed_funding}}</li>
-      <li class="list-group-item">A second item</li>
-    </ul>
-    {{!-- <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-    </div> --}}
+<div class="card card-rounded appointment " style="width: 18rem; padding: 10px">
+ <div class=""><img src="images\Fukachu.jpg" class="card-img-top petImage" alt="..."></div>
+  <div class="card-body">
+    <h5 class="card-title">
+          <a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h5>
+    <p class="card-text">{{appointment.description}}</p>
   </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{format_amount appointment.needed_funding}}</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+  </div>
+</div>
+{{/each}}
+
 
   {{/each}}
 </div>

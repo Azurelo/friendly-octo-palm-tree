@@ -16,7 +16,7 @@ Appointment.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     date_created: {
       type: DataTypes.DATE,

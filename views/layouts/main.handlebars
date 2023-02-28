@@ -13,24 +13,25 @@
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <span role="img" aria-label="money">💸</span>
+        <span role="img" aria-label="unicorn">🦄</span>
         <a href="/">Mythical Mutts!</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a class="btn btn-primary" href="/profile" role="button">profile</a> |
-        <button class="btn btn-primary" id="logout" >logout</button>
+        <button class="btn btn-primary" id="logout">logout</button>
         {{else}}
-        <a class="btn btn-primary"href="/login" role="button">login</a>
+        <a class="btn btn-primary" href="/login" role="button">login</a>
         {{/if}}
       </nav>
     </header>
     <main class="container container-fluid mt-5">
-      <div class="row" style=" margin: 10px">
-        <!-- Render the sub layout -->
-        {{{ body }}}
-      </div>
+      <div class="container text-center">
+        <div class="row" style=" margin: 10px">
+          <!-- Render the sub layout -->
+          {{{ body }}}
+        </div>
     </main>
     <div class="footer">
       <footer>
@@ -41,7 +42,7 @@
 
           </div>
           <div class="row">
-          
+
             <div class="col-sm-6 col-md-2 item">
               <ul>
                 <li><a href="https://github.com/elawilliam">Ela William</a></li>
@@ -62,7 +63,7 @@
                 <li><a href="https://github.com/eskevin14th">Kevin Barraza</a></li>
               </ul>
             </div>
-              <div class="col-sm-6 col-md-2 item">
+            <div class="col-sm-6 col-md-2 item">
               <ul>
                 <li><a href="https://github.com/kthlnt">Katherine Lantto</a></li>
               </ul>

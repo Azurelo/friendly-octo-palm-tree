@@ -7,13 +7,20 @@ header{
 .appointment {
   margin: .5%;
 }
-
+.col-lg{
+  margin: 5%
+}
 .dollar-amount {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
 }
-
+h3{
+  color: #1b89bc;
+}
+h1{
+  color: #1b89bc;
+}
 .btn-primary {
   font-family: Raleway-SemiBold;
   font-size: 13px;

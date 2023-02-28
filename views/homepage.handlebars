@@ -4,9 +4,9 @@
 
 
 <div class="card card-rounded appointment " style="width: 18rem; padding: 10px">
-  <img src="..." class="card-img-top" alt="...">
+ <div class=""><img src="images\Fukachu.jpg" class="card-img-top petImage" alt="..."></div>
   <div class="card-body">
-    <h5 class="card-title"> {{{get_emoji}}}
+    <h5 class="card-title">
           <a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h5>
     <p class="card-text">{{appointment.description}}</p>
   </div>
@@ -19,7 +19,6 @@
     <a href="#" class="card-link">Card link</a>
   </div>
 </div>
-
 {{/each}}
 
 {{!-- original code below --}}

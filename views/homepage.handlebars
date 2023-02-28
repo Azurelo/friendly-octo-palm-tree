@@ -1,6 +1,12 @@
 <!-- Loop over each object in the Appointment array -->
-{{#each appointments as |appointment| }}
+<div class="row justify-content-md-center">
+  <div class="col col-lg">
+    <h1>Welcome</h1>
+    <h3>Here you can browse for your own special mutt, make an appointment to meet
+      your future friend, or upload a mutt in need of a home.</h3>
+  </div>
 
+  {{#each appointments as |appointment| }}
 
 
 <div class="card card-rounded appointment " style="width: 18rem; padding: 10px">
@@ -21,24 +27,28 @@
 </div>
 {{/each}}
 
+
+  {{/each}}
+</div>
+</div>
 {{!-- original code below --}}
-  {{!-- <div class="col-sm-6 appointment">
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-title">
-          <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-          {{{get_emoji}}}
-          <a href="/appointment/{{appointment.id}}">{{appointment.name}}</a>
-        </h2>
-        <p class="card-text">
-          <span for="img" aria-label="money">💲</span>
-          <!-- Pass needed_funding value to the helper function -->
-          <span class="dollar-amount">{{format_amount appointment.needed_funding}}</span>
-          needed!
-        </p>
-        <p>Created by {{appointment.user.name}} on {{format_date appointment.date_created}}</p>
-      </div>
+{{!-- <div class="col-sm-6 appointment">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        {{{get_emoji}}}
+        <a href="/appointment/{{appointment.id}}">{{appointment.name}}</a>
+      </h2>
+      <p class="card-text">
+        <span for="img" aria-label="money">💲</span>
+        <!-- Pass needed_funding value to the helper function -->
+        <span class="dollar-amount">{{format_amount appointment.needed_funding}}</span>
+        needed!
+      </p>
+      <p>Created by {{appointment.user.name}} on {{format_date appointment.date_created}}</p>
     </div>
+  </div>
 
   <div class="col-md-7 text-center">
     <p>

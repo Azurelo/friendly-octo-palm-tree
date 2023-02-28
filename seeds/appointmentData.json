@@ -13,5 +13,35 @@
     "name": "Neill",
     "description": "Neilla Monster",
     "needed_funding": 5000
+  },
+  {
+    "name": "Peggy",
+    "description": "Pegasus",
+    "needed_funding": 5000
+  },
+  {
+    "name": "Gary",
+    "description": "Goblin",
+    "needed_funding": 5000
+  },
+  {
+    "name": "Phinny",
+    "description": "Phoenix",
+    "needed_funding": 5000
+  },
+  {
+    "name": "Linda",
+    "description": "Liger",
+    "needed_funding": 5000
+  },
+  {
+    "name": "Sir Theodore",
+    "description": "Gnome",
+    "needed_funding": 5000
+  },
+  {
+    "name": "Little Guy",
+    "description": "Dragon",
+    "needed_funding": 5000
   }
 ]

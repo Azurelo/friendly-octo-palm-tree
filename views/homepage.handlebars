@@ -6,18 +6,18 @@
       your future friend, or upload a mutt in need of a home.</h3>
   </div>
 
-  {{#each appointments as |appointment| }}
+  {{#each pets as |pet| }}
 
 
 <div class="card card-rounded appointment " style="width: 18rem; padding: 10px">
  <div class=""><img src="images\Fukachu.jpg" class="card-img-top petImage" alt="..."></div>
   <div class="card-body">
     <h5 class="card-title">
-          <a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h5>
-    <p class="card-text">{{appointment.description}}</p>
+          <a href="/pet/{{pet.id}}">{{pet.name}}</a></h5>
+    <p class="card-text">{{pet.description}}</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{format_amount appointment.needed_funding}}</li>
+    <li class="list-group-item">$500</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>

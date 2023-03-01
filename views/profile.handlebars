@@ -7,37 +7,37 @@
 <div class="container text-center">
   <div class="">
     <h3>Create a New Appointment:</h3>
-    <form class="form new-appointment-form">
+    <form class="form new-pet-form">
       <fieldset>
         <legend>Create An Appointment</legend>
         <div class="mb-3 form-group">
-          <label for="appointment-name" class="form-label">Pet name:</label>
-          <input type="text" id="appointment-name" class="form-input" placeholder="Pet Name" name="appointment-name">
+          <label for="pet-name" class="form-label">Pet name:</label>
+          <input type="text" id="pet-name" class="form-input" placeholder="Pet Name" name="pet-name">
         </div>
         <div class="mb-3 form-group">
-          <label for="appointment-funding" class="form-label">Adoption Fee:</label>
-          <input type="text" id="appointment-funding" class="form-input" placeholder="Adoption Fee" name="appointment-funding">
+          <label for="pet-funding" class="form-label">Adoption Fee:</label>
+          <input type="text" id="pet-funding" class="form-input" placeholder="Adoption Fee" name="pet-funding">
         </div>
         <div class="mb-3 form-group">
-          <label for="appointment-desc" class="form-label">Appointment Time:</label>
-          <input type="text" id="appointment-desc" class="form-input" placeholder="Appointment Time" name="appointment-desc">
+          <label for="pet-desc" class="form-label">Appointment Time:</label>
+          <input type="text" id="pet-desc" class="form-input" placeholder="Pet Time" name="pet-desc">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </fieldset>
     </form>
   </div>
 
-  {{#if appointments.length}}
-  <div class="container text-center appointment-list">
+  {{#if pets.length}}
+  <div class="container text-center pet-list">
     <h3>Current Appointments:</h3>
 
-    {{#each appointments as |appointment|}}
+    {{#each pets as |pet|}}
     <div class="container text-center">
       <div class="md-8">
-        <h4><a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h4>
+        <h4><a href="/pet/{{pet.id}}">{{pet.name}}</a></h4>
       </div>
       <div class="md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{appointment.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{pet.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}

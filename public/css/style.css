@@ -9,6 +9,21 @@ header{
 }
 .footer{
   border-top: 1px solid #5e5d5d;
+  
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+main {
+  flex: 1;
 }
 .appointment {
   margin: .5%;
@@ -63,6 +78,8 @@ h1{
   background: rgba(217, 83, 78, 0.75);
   border: 2px solid rgba(217, 83, 78, 0.75);
 }
+
+
 
 /* .no-button {
   background: none;

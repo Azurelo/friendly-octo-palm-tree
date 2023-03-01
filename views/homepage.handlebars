@@ -16,13 +16,11 @@
           <a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h5>
     <p class="card-text">{{appointment.description}}</p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{format_amount appointment.needed_funding}}</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
+    <p class="list-group-item">{{format_amount appointment.needed_funding}}</p>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Info Here</p>
   </div>
 </div>
 {{/each}}

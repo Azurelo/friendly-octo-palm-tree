@@ -1,38 +1,47 @@
 [
   {
     "name": "David",
-    "description": "Fukachu"
+    "description": "Fukachu",
+    "picture": "Fukachu"
   },
   {
     "name": "Joey",
-    "description": "Cyborg Baby Kangaroo"
+    "description": "Cyborg Baby Kangaroo",
+    "picture": "trialjoey"
   },
   {
     "name": "Neill",
-    "description": "Neilla Monster"
+    "description": "Neilla Monster",
+    "picture": "wipaa"
   },
   {
     "name": "Peggy",
-    "description": "Pegasus"
+    "description": "Pegasus",
+    "picture": "pegg"
   },
   {
     "name": "Gary",
-    "description": "Goblin"
+    "description": "Goblin",
+    "picture": "gobb"
   },
   {
     "name": "Phinny",
-    "description": "Phoenix"
+    "description": "Phoenix",
+    "picture": "phoenix"
   },
   {
     "name": "Linda",
-    "description": "Liger"
+    "description": "Liger",
+    "picture": "liger23"
   },
   {
     "name": "Sir Theodore",
-    "description": "Gnome"
+    "description": "Gnome",
+    "picture": "gnome-2"
   },
   {
     "name": "Little Guy",
-    "description": "Dragon"
+    "description": "Dragon",
+    "picture": "ddargon"
   }
 ]

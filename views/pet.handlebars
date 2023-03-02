@@ -2,13 +2,30 @@
   <h2>{{name}}</h2>
   <div class="singlePet"><img src="/images/{{picture}}.jpg" alt="{{name}}" class="card-img-top petImage"></div>
   <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
     <span for="img" aria-label="money">💲</span>
     <span class="dollar-amount">5000</span>
     needed
   </p>
   <p>
-    <button class="btn btn-primary">Mythical Mutts are cool as heck lets go!!!!!!</button>
+    <button id="button" class="btn btn-primary">Mythical Mutts are cool as heck lets go!!!!!!</button>
   </p>
 </div>
+
+<script>
+  const button = document.getElementById('button');
+
+  button.addEventListener('click', () => {
+  // Make a GET request to your profile endpoint
+  fetch('/profile')
+    .then(response => {
+      if (response.ok) {
+        // If the response is ok, redirect to the profile page
+        window.location.href = '/profile';
+      } else {
+        console.error('Error fetching profile data');
+      }
+    })
+    .catch(error => console.error(error));
+});
+</script>

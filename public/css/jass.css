@@ -983,8 +983,8 @@ a:hover {
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
-  color: #1a1a1a;
-  background-color: #aeaeae;
+  /* color: #1a1a1a;
+  background-color: #aeaeae; */
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1013,12 +1013,12 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: #4d6a88;
   color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  /* background-color: #57779a; */
 }
 
 .btn.btn-danger {

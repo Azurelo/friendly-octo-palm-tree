@@ -1,5 +1,5 @@
-<div class="container text-center">
-  <div class="">
+<div class=" text-center">
+  <div class="text-center">
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
@@ -31,8 +31,10 @@
   <div class="container text-center pet-list">
     <h3>Current Appointments:</h3>
 
+
     {{#each pets as |pet|}}
     <div class="container text-center">
+
       <div class="md-8">
         <h4><a href="/pet/{{pet.id}}">{{pet.name}}</a></h4>
       </div>

@@ -9,20 +9,24 @@
   {{#each pets as |pet| }}
 
 
+
 <div class="card card-rounded appointment " style="width: 18rem; padding: 10px">
  <div class=""><img src="/images/{{picture}}.jpg" alt="{{name}}" class="card-img-top petImage"></div>
+
   <div class="card-body">
     <h5 class="card-title">
           <a href="/pet/{{pet.id}}">{{pet.name}}</a></h5>
     <p class="card-text">{{pet.description}}</p>
   </div>
+
+
   <ul class="list-group list-group-flush">
     <li class="list-group-item">$500</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
+    <p class="card-text">Info Here</p>
   </div>
 </div>
 {{/each}}

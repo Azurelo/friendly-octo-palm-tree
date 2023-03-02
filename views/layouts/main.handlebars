@@ -9,39 +9,39 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+<body class="">
+  <div class="flex-column justify-space-around" style="background-color:rgb(240, 240, 240)">
+    <header class="display-flex justify-space-between align-center p-2 navbar " style="background-color:rgb(177, 177, 177)">
       <h1>
         <span role="img" aria-label="unicorn">🦄</span>
         <a href="/">Mythical Mutts!</a>
       </h1>
-      <nav>
+      <nav class="" style="">
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
 
 
-        <a href="/newpet">New Pet</a> |
+        <a class="btn btn-primary" href="/newpet" role="button">New Pet</a> 
 
 
-        <a class="btn btn-primary" href="/profile" role="button">profile</a> |
-        <button class="btn btn-primary" id="logout">logout</button>
+        <a class="btn btn-primary" href="/profile" role="button">Profile</a> 
+        <button class="btn btn-primary" id="logout">Logout</button>
 
         {{else}}
-        <a class="btn btn-primary" href="/login" role="button">login</a>
+        <a class="btn btn-primary" href="/login" role="button">Login</a>
         {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
-      <div class="container text-center">
-        <div class="row" style=" margin: 10px">
+    <main class=" col d-flex justify-content-center mt-5">
+      <div class="container text-center ">
+        <div class="row " style=" margin: 10px">
           <!-- Render the sub layout -->
           {{{ body }}}
         </div>
     </main>
-    <div class="footer">
-      <footer>
-        <div class="container text-center">
+    <div class="footer " style="background-color:rgb(177, 177, 177)">
+      <footer >
+        <div class=" text-center" >
           <div class="col">
 
             <p>Contributors</p>

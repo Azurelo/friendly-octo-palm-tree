@@ -2,46 +2,46 @@
   {
     "name": "David",
     "description": "Fukachu",
-    "needed_funding": 5000
+    "picture": "Fukachu"
   },
   {
     "name": "Joey",
     "description": "Cyborg Baby Kangaroo",
-    "needed_funding": 5000
+    "picture": "trialjoey"
   },
   {
     "name": "Neill",
     "description": "Neilla Monster",
-    "needed_funding": 5000
+    "picture": "wipaa"
   },
   {
     "name": "Peggy",
     "description": "Pegasus",
-    "needed_funding": 5000
+    "picture": "pegg"
   },
   {
     "name": "Gary",
     "description": "Goblin",
-    "needed_funding": 5000
+    "picture": "gobb"
   },
   {
     "name": "Phinny",
     "description": "Phoenix",
-    "needed_funding": 5000
+    "picture": "phoenix"
   },
   {
     "name": "Linda",
     "description": "Liger",
-    "needed_funding": 5000
+    "picture": "liger23"
   },
   {
     "name": "Sir Theodore",
     "description": "Gnome",
-    "needed_funding": 5000
+    "picture": "gnome-2"
   },
   {
     "name": "Little Guy",
     "description": "Dragon",
-    "needed_funding": 5000
+    "picture": "ddargon"
   }
 ]

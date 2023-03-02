@@ -31,6 +31,10 @@ main {
 .col-lg{
   margin: 5%
 }
+.singlePet{
+  width: 30%;
+  margin: auto;
+}
 .dollar-amount {
   color: #056605;
   font-weight: bold;

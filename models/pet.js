@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Appointment extends Model {}
+class Pet extends Model {}
 
-Appointment.init(
+Pet.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -15,9 +15,16 @@ Appointment.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    description: {
+      type: DataTypes.STRING,
+    },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
+    picture:{
+      type: DataTypes.BLOB('long'),
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -32,8 +39,8 @@ Appointment.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'appointment',
+    modelName: 'pet',
   }
 );
 
-module.exports = Appointment
+module.exports = Pet

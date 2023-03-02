@@ -1,12 +1,12 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#appointment-name').value.trim();
-  const needed_funding = document.querySelector('#appointment-funding').value.trim();
-  const description = document.querySelector('#appointment-desc').value.trim();
+  const name = document.querySelector('#pet-name').value.trim();
+  const needed_funding = document.querySelector('#pet-funding').value.trim();
+  const description = document.querySelector('#pet-desc').value.trim();
 
   if (name && needed_funding && description) {
-    const response = await fetch(`/api/appointments`, {
+    const response = await fetch(`/api/pets`, {
       method: 'POST',
       body: JSON.stringify({ name, needed_funding, description }),
       headers: {
@@ -17,7 +17,7 @@ const newFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to create appointment');
+      alert('Failed to create pet');
     }
   }
 };
@@ -26,23 +26,23 @@ const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
-    const response = await fetch(`/api/appointments/${id}`, {
+    const response = await fetch(`/api/pets/${id}`, {
       method: 'DELETE',
     });
 
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to delete appointment');
+      alert('Failed to delete pet');
     }
   }
 };
 
 document
-  .querySelector('.new-appointment-form')
+  .querySelector('.new-pet-form')
   .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('.appointment-list')
+  .querySelector('.pet-list')
   .addEventListener('click', delButtonHandler);
 

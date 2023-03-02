@@ -107,6 +107,7 @@ a {
 }
 a:hover {
   color: rgb(199, 103, 191);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 /* .no-button {

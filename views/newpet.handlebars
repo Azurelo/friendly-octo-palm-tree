@@ -7,19 +7,19 @@
 <div class="container text-center">
   <div class="">
     <h3>Create a New pet:</h3>
-    <form class="form new-pet-form">
+    <form class="form new-pet-form" enctype="multipart/form-data">
       <fieldset>
         <div class="mb-3 form-group">
           <label for="pet-name" class="form-label">Pet Name:</label>
           <input class="form-input" type="text" id="pet-name" name="pet-name" placeholder="Pet Name"/>
         </div>
-        <div class="mb-3 form-group">
-          <label for="pet-funding" class="form-label">Cost ($):</label>
-          <input class="form-input" type="text" id="pet-funding" placeholder="Adoption Fee" name="pet-funding" />
-        </div>
         <div class="form-group mb-3">
           <label for="pet-desc">Description:</label>
-          <textarea class="form-input" id="pet-desc" name="pet-desc"></textarea>
+          <input class="form-input" type="text" id="pet-desc" name="pet-desc" placeholder="Fun Fact Here"></textarea>
+        </div>
+        <div class="form-group mb-3">
+          <label for="pet-picture">Upload JPEG Image:</label>
+          <input class="form-input" type="file" id="pet-picture" name="pet-picture"></textarea>
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Create</button>
@@ -29,4 +29,4 @@
   </div>
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="./js/surrender.js"></script>

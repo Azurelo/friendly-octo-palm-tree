@@ -3,19 +3,19 @@ const router = express.Router();
 const { Appointment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-/* ------------------------------------------------------ */
-
-// Define a route to handle file uploads and create new appointments
+// Define a route to create new appointments
 router.post('/', withAuth, async (req, res) => {
   try {
     // Create a new instance of your model
-    console.log(req);
     const newAppointment = await Appointment.create({
       ...req.body,
       user_id: req.session.user_id,
     });
     res.status(200).json(newAppointment);
+    console.log("Appointment Created Successfully!")
+    console.log(newAppointment);
   } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
 });

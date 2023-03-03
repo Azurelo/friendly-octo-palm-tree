@@ -27,23 +27,6 @@
       </fieldset>
     </form>
   </div>
-
-  {{#if pets.length}}
-  <div class="col-md-6 pet-list">
-    <h3>Current Appointments:</h3>
-
-    {{#each pets as |pet|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/pet/{{pet.id}}">{{pet.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{pet.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
 </div>
 
 <script src="./js/profile.js"></script>

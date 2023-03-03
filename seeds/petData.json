@@ -1,47 +1,47 @@
 [
   {
     "name": "David",
-    "description": "Fukachu",
+    "description": "David is a rare Fukachu. This is a wise creature just don't make it angry.",
     "picture": "Fukachu"
   },
   {
     "name": "Joey",
-    "description": "Cyborg Baby Kangaroo",
+    "description": "Joey is a Cyborg Baby Kangaroo. This creature hops around and shoots his lasers randomly. Caution: Please do not stand in this pet's way.",
     "picture": "trialjoey"
   },
   {
     "name": "Neill",
-    "description": "Neilla Monster",
+    "description": "The Neilla Monster is a relatively new species of Gila Monster. This evolution branch is able to breathe fire. Other than setting things ablaze, Neilla Monsters love making friends.",
     "picture": "wipaa"
   },
   {
     "name": "Peggy",
-    "description": "Pegasus",
+    "description": "Peggy the Pegasus is a magestic winged stallion. Having her around is sure to bring good fortune.",
     "picture": "pegg"
   },
   {
     "name": "Gary",
-    "description": "Goblin",
+    "description": "Goblin Gary will wake you up in the middle of the night from rummaging through the trash.",
     "picture": "gobb"
   },
   {
     "name": "Phinny",
-    "description": "Phoenix",
+    "description": "Phoenix show great compassion and you don't need to worry about them dying!",
     "picture": "phoenix"
   },
   {
     "name": "Linda",
-    "description": "Liger",
+    "description": "Liger: It's pretty much my favorite animal. It's like a lion and a tiger mixed... bred for its skills in magic.",
     "picture": "liger23"
   },
   {
     "name": "Sir Theodore",
-    "description": "Gnome",
+    "description": "Gnomes are nice grumpy fellas.",
     "picture": "gnome-2"
   },
   {
     "name": "Little Guy",
-    "description": "Dragon",
+    "description": "This dragon is in need of a permanent home, hopefully one with a big backyard.",
     "picture": "ddargon"
   }
 ]

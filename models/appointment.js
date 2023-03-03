@@ -15,8 +15,8 @@ Appointment.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    date_created: {
-      type: DataTypes.DATE,
+    time: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
     user_id: {

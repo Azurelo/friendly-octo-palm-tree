@@ -27,10 +27,9 @@ async function newFormHandler(event) {
   }
   
   
-  
   document
     .querySelector('.new-pet-form')
     .addEventListener('submit', newFormHandler);
-  
+
   
   

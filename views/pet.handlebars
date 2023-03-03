@@ -10,6 +10,9 @@
   <p>
     <button id="button" class="btn btn-primary">Mythical Mutts are cool as heck lets go!!!!!!</button>
   </p>
+  <div class="md-4">
+    <button class="pet-list btn btn-sm btn-danger" data-id="{{pet.id}}">DELETE</button>
+  </div>
 </div>
 
 <script>
@@ -28,4 +31,5 @@
     })
     .catch(error => console.error(error));
 });
+
 </script>

@@ -4,26 +4,27 @@
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-md-6">
+<div class="container text-center">
+  <div class="">
     <h3>Create a New pet:</h3>
-
     <form class="form new-pet-form">
-      <div class="form-group">
-        <label for="pet-name">Pet Name:</label>
-        <input class="form-input" type="text" id="pet-name" name="pet-name" />
-      </div>
-      <div class="form-group">
-        <label for="pet-funding">Cost ($):</label>
-        <input class="form-input" type="file" id="pet-funding" name="pet-funding" />
-      </div>
-      <div class="form-group">
-        <label for="pet-desc">description:</label>
-        <textarea class="form-input" id="pet-desc" name="pet-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
+      <fieldset>
+        <div class="mb-3 form-group">
+          <label for="pet-name" class="form-label">Pet Name:</label>
+          <input class="form-input" type="text" id="pet-name" name="pet-name" placeholder="Pet Name"/>
+        </div>
+        <div class="mb-3 form-group">
+          <label for="pet-funding" class="form-label">Cost ($):</label>
+          <input class="form-input" type="text" id="pet-funding" placeholder="Adoption Fee" name="pet-funding" />
+        </div>
+        <div class="form-group mb-3">
+          <label for="pet-desc">Description:</label>
+          <textarea class="form-input" id="pet-desc" name="pet-desc"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+      </fieldset>
     </form>
   </div>
 

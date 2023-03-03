@@ -29,5 +29,6 @@
     "url": "https://github.com/Azurelo/friendly-octo-palm-tree/issues"
   },
   "homepage": "https://github.com/Azurelo/friendly-octo-palm-tree#readme",
-  "description": ""
+  "description": "Here you can browse for your own special mutt, make an appointment to meet your future friend, or upload a mutt in need of a home.",
+  "devDependencies": {}
 }

@@ -1,22 +1,31 @@
 * {
   font-family: Raleway-SemiBold;
-}
-.card{
-  background-color: white;
-}
-header{
-  border-bottom: 1px solid #5e5d5d;
-}
-.footer{
-  border-top: 1px solid #5e5d5d;
   
 }
+
+.card {
+  background-color: white;
+  border-color: rgb(113, 173, 252);
+  box-shadow: 0 3px 6px rgba(113, 173, 252, 0.5), 0 3px 6px rgba(113, 173, 252, 0.5);
+}
+
+header {
+  border-bottom: 1px solid #1b89bc;
+}
+
+.footer {
+  border-top: 1px solid #1b89bc;
+
+}
+
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+.form {}
+
 main {
   flex: 1;
 }
@@ -25,34 +34,43 @@ main {
 main {
   flex: 1;
 }
+
 .appointment {
   margin: .5%;
 }
-.col-lg{
+
+.col-lg {
   margin: 5%
 }
-.singlePet{
+
+.singlePet {
   width: 30%;
   margin: auto;
 }
+
 .dollar-amount {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
 }
-h3{
-  color: #1b89bc;
+
+h1 {
+
 }
-h1{
-  color: #1b89bc;
+
+h5,
+h3,
+h2 {
+  color: rgb(233, 157, 168);
 }
+
 .btn-primary {
   font-family: Raleway-SemiBold;
   font-size: 13px;
-  color: rgba(58, 133, 191, 0.75);
+  color: rgba(61, 142, 204, 0.75);
   letter-spacing: 1px;
   line-height: 15px;
-  border: 2px solid rgba(58, 133, 191, 0.75);
+  border: 2px solid rgba(31, 67, 95, 0.75);
   border-radius: 40px;
   background: transparent;
   transition: all 0.3s ease 0s;
@@ -60,9 +78,9 @@ h1{
 }
 
 .btn-primary:hover {
-  color: #FFF;
-  background: rgba(58, 133, 191, 0.75);
-  border: 2px solid rgba(58, 133, 191, 0.75);
+  color: #ffffff;
+  background: rgba(255, 154, 210, 0.75);
+  border: 2px solid rgba(255, 109, 236, 0.75);
 }
 
 .btn-danger {
@@ -83,7 +101,14 @@ h1{
   border: 2px solid rgba(217, 83, 78, 0.75);
 }
 
-
+a {
+  color: rgb(103, 129, 199);
+  
+}
+a:hover {
+  color: rgb(199, 103, 191);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
 
 /* .no-button {
   background: none;

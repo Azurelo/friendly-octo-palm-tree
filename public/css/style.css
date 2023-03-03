@@ -2,7 +2,9 @@
   font-family: Raleway-SemiBold;
   
 }
-
+li {
+  list-style: "✨";
+}
 .card {
   background-color: white;
   border-color: rgb(113, 173, 252);

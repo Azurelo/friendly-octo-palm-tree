@@ -22,16 +22,16 @@
       </fieldset>
     </form>
   </div>
-
+  
   {{#if appointments.length}}
   <div class="container text-center appointment-list">
     <h3>Current Appointments:</h3>
 {{!-- Going to have to edit this to show appointments instead of appointments. --}}
     {{#each appointments as |appointment|}}
-    <div class="container text-center">
+    <div class="text-center">
 
       <div class="md-8">
-        <h4><a href="/appointment/{{appointment.id}}">{{appointment.name}}</a></h4>
+        <h4>Appointment for {{appointment.name}} at {{appointment.time}}</h4>
       </div>
       <div class="md-4">
         <button class="btn btn-sm btn-danger" data-id="{{appointment.id}}">DELETE</button>
@@ -39,6 +39,8 @@
     </div>
     {{/each}}
   </div>
+  {{else}}
+  <h2>No current appointments.</h2>
   {{/if}}
 </div>
 

@@ -12,6 +12,8 @@ const upload = multer({ dest: 'images/' });
 router.post('/', withAuth, upload.single('picture'), async (req, res) => {
   try {
     // Read the uploaded file contents
+    console.log(req.body); // log the request body
+    console.log(req.file);
     const imageData = fs.readFileSync(req.file.path);
 
     // Create a new instance of your model, and set the BLOB property to the uploaded file contents

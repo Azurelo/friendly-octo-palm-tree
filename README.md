@@ -1,36 +1,28 @@
 # Mythical Mutts
 
-#### *"Meet ur furrever mystical mongrel"*
+#### *✨ Meet ur furrever mystical mongrel ✨*
 
 ## Deployed Site
 
 ## Description
 
-Welcome to the magical world of mythical creatures, where our pet adoption and surrender agency specilizes in finding loving homes for these unique beings. From unicorns to dragons, and everything in between, we are dedicated to providing a safe and supportive environment for these mystical creatures. We understand that caring for mythical creatures requires a special kind of knowledge and expertise, which is why our team of experienced volunteers is well-versed in the needs and care of each creature. Whether you are looking to adopt a unicorn to add some magic to your life, or need to surrender a gridden due to unforseen circumstances, we are here to help. We work closely with potential adopters to ensure that they are a good match for the creature, taking into account factors like experience, lifestyle and temperament. Our mission is to ensure that every mythical creature finds a loving, card and forever home, where they can thrive and be appreciated for their unique qualities. Let us help you bring a little bit of magic into your life and the life of a mythical creature in need.
-
-Here you can browse for your own special mutt, make an appointment to meet your future friend, or upload a mutt in need of a home.
-
-![license](https://img.shields.io/badge/license-ISC-blue)
-
-## Project Description
-![Screenshot]
-
-
-## Installation Instructions
-
+Welcome to the magical & marvelous world of mythical mutts! Our pet adoption & surrender agency specializes in finding loving & *furrever* homes for mystical mongrels. From sea crackens to hippogriffs, we are dedicated to providing a safe & supportive platform for these mind-boggling monsters. We understand that caring for a mesmeric creature requires a special kind of knowledge, magic & expertise, which is why our team of experienced wizards is well-versed in the needs & care of each magnetic species. Whether you are looking to adopt a unicorn to add some magic to your daily commute, or you need to surrender a werewolf due to it having devoured your only child during the last full moon, we are here to help. We work closely with potential adopters to ensure that they are the right match for the creature, taking into account factors like experience, lifestyle & temperament. Our mission is to ensure that every mythical mutt finds a loving, caring & *furrever* home, where they can thrive & be appreciated for their unique qualities. Let us help you bring a little bit of magic into your life & the life of a magical beast in need. Adopt, don't shop 😉
 
 ## Usage
+Browse for your own magnificent mutt, make an appointment to meet your future friend, or upload a mongrel in need of a home 🦄
+
+## Mock Up
+![Alt text](images/welcomepage.png)
+![Alt text](images/signin.png) 
 
 
 ## Contributors
+* [Angela Witham](https://github.com/elawilliam) | ela.witham@gmail.com
+* [Brandy Posthuma](https://github.com/Brandy-Posthuma) | blposthuma@yahoo.com
 * [Justus Schoppmann](https://github.com/Azurelo) | justusschoppmann@yahoo.com
 * [Katherine Lantto](https://github.com/kthlnt) | kathlantto@gmail.com
-* [Brandy Posthuma](https://github.com/Brandy-Posthuma) | blposthuma@yahoo.com
-* [Angela Witham](https://github.com/elawilliam) | ela.witham@gmail.com
 * [Kevin Barraza](https://github.com/eskevin14th) | eskevin14th@outlook.com
 
 
-
-
 ## License
-ISC
+![license](https://img.shields.io/badge/license-ISC-blue)

@@ -43,4 +43,4 @@ pet.init(
   }
 );
 
-module.exports = Pet
+module.exports = pet

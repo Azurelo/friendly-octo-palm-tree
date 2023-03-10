@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Pet } = require('../../models');
+const { pet } = require('../../models');
 const withAuth = require('../../utils/auth');
 const multer = require('multer');
 const fs = require('fs');
@@ -34,7 +34,7 @@ router.post('/', withAuth, upload.single('picture'), async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const petData = await Pet.destroy({
+    const petData = await pet.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
@@ -47,7 +47,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     }
 
     // Delete the pet's image file from disk, if it exists
-    const pet = await Pet.findByPk(req.params.id);
+    const pet = await pet.findByPk(req.params.id);
     if (pet.picture) {
       const imagePath = path.join(__dirname, '../../', pet.picture);
       if (fs.existsSync(imagePath)) {

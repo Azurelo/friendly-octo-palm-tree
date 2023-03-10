@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Pet , User, Appointment } = require('../models');
+const { pet , User, Appointment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all Pets and JOIN with user data
-    const petData = await Pet.findAll({
+    const petData = await pet.findAll({
       include: [
         {
           model: User,
@@ -56,7 +56,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Pet },
+      include: [{ model: pet },
         { model: Appointment }],
     });
 
@@ -76,7 +76,7 @@ router.get('/newpet', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Pet }],
+      include: [{ model: pet }],
     });
 
     const user = userData.get({ plain: true });

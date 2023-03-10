@@ -1,6 +1,6 @@
 const User = require('./user');
 const Pet = require('./pet');
-const Appointment = require('./Appointment');
+const Appointment = require('./appointment');
 
 User.hasMany(Pet, {
   foreignKey: 'user_id',
